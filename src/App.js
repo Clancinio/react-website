@@ -1,7 +1,10 @@
+// Components
+import AboutUs from "./pages/AboutUs";
+
 function App() {
   return (
     <div className="App">
-      <h1>Good Morning!!</h1>
+      <AboutUs />
     </div>
   );
 }
