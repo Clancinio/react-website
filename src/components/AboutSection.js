@@ -13,7 +13,7 @@ function AboutSection() {
         <p>Call us if you want to get after it.</p>
         <button>Contact Us</button>
       </div>
-      <img src="https://picsum.photos/300/400" alt=""/>
+      <img src="https://picsum.photos/300/400" alt="logo"/>
     </div>
   );
 }
