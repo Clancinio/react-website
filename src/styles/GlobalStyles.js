@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     background: #1b1b1b;
+    color: white;
   }
   button {
     font-weight: bold;
@@ -21,6 +22,27 @@ const GlobalStyles = createGlobalStyle`
     &:hover {
       background-color: #23d997;
     }
+  }
+  h2 {
+    font-weight: lighter;
+    font-size: 4rem;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  span {
+    font-weight: bold;
+    color: #23d997;
+  }
+  p {
+    padding: 3rem 0;
+    color: #ccc;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+  a {
+    font-size: 101rem;
   }
 `;
 
