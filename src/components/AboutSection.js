@@ -1,6 +1,9 @@
+// Styled-Components
+import styled from "styled-components";
+
 function AboutSection() {
   return (
-    <div>
+    <StyledAbout>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -14,8 +17,17 @@ function AboutSection() {
         <button>Contact Us</button>
       </div>
       <img src="https://picsum.photos/300/400" alt="logo"/>
-    </div>
+    </StyledAbout>
   );
 }
+
+// Styled Components 
+const StyledAbout = styled.div`
+  display: flex;
+  min-height: 90vh;
+  align-items: centre;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+`
 
 export default AboutSection;
