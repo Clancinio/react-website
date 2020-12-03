@@ -1,5 +1,11 @@
 // Styled-Components
 import styled from "styled-components";
+import {
+  StyledAbout,
+  StyledDescription,
+  StyledImage,
+  Hide,
+} from "../styles/ComponentStyles";
 
 function AboutSection() {
   return (
@@ -26,33 +32,5 @@ function AboutSection() {
 }
 
 // Styled Components
-const StyledAbout = styled.div`
-  display: flex;
-  min-height: 90vh;
-  align-items: centre;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-`;
 
-const StyledDescription = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const StyledImage = styled.div`
-  flex: 1;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`
 export default AboutSection;
