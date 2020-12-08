@@ -7,7 +7,7 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link id="logo" to="/">
-          Confluence Jiu-Jitsu
+          Confluence
         </Link>
       </h1>
       <ul>
