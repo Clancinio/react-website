@@ -4,13 +4,13 @@ import styled from "styled-components";
 export const StyledAbout = styled.div`
   display: flex;
   min-height: 90vh;
-  align-items: centre;
+  align-items: center;
   justify-content: space-between;
   padding: 5rem 10rem;
 `;
 
 export const StyledDescription = styled.div`
-  flex: 1;
+  flex: 60% 1;
   padding-right: 5rem;
   h2 {
     font-weight: lighter;
@@ -18,11 +18,11 @@ export const StyledDescription = styled.div`
 `;
 
 export const StyledImage = styled.div`
-  flex: 1;
+ flex: 35% 1;
   overflow: hidden;
   img {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     object-fit: cover;
   }
 `;
