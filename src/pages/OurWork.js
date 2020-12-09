@@ -8,21 +8,21 @@ function OurWork() {
       <Movie>
         <h2>The Great Hunger</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/the-athlete">
           <img src="https://picsum.photos/400/300" alt="movie screenshot" />
         </Link>
       </Movie>
       <Movie>
         <h2>The Great Times</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/the-racer">
           <img src="https://picsum.photos/400/300" alt="movie screenshot" />
         </Link>
       </Movie>
       <Movie>
         <h2>The Great Vaccine</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/good-times">
           <img src="https://picsum.photos/400/300" alt="movie screenshot" />
         </Link>
       </Movie>

@@ -2,8 +2,8 @@ export const MovieState = () => {
   return [
     {
       title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
+      mainImg: "https://picsum.photos/300/400",
+      secondaryImg: "https://picsum.photos/400/300",
       url: "/work/the-athlete",
       awards: [
         {
@@ -25,9 +25,9 @@ export const MovieState = () => {
     },
     {
       title: "Good Times",
-      mainImg: goodtimes,
+      mainImg: "https://picsum.photos/400/300",
       url: "/work/good-times",
-      secondaryImg: goodtimes2,
+      secondaryImg: "https://picsum.photos/400/300",
       awards: [
         {
           title: "Truly A masterpiece",
@@ -48,9 +48,9 @@ export const MovieState = () => {
     },
     {
       title: "The Racer",
-      mainImg: theracer,
+      mainImg: "https://picsum.photos/400/300",
       url: "/work/the-racer",
-      secondaryImg: theracer2,
+      secondaryImg: "https://picsum.photos/400/300",
       awards: [
         {
           title: "Truly A masterpiece",
