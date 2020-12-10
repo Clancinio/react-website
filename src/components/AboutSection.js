@@ -1,26 +1,27 @@
 // Styled-Components
-import styled from "styled-components";
 import {
   StyledAbout,
   StyledDescription,
   StyledImage,
   Hide,
 } from "../styles/ComponentStyles";
+// Framer Motion
+import { motion } from "framer-motion";
 
 function AboutSection() {
   return (
     <StyledAbout>
       <StyledDescription>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               your <span>dreams</span> become a reality.
-            </h2>
+            </motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>Call us if you want to get after it.</p>
         <button>Contact Us</button>
       </StyledDescription>
