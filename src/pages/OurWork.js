@@ -1,10 +1,19 @@
 // React Router
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 
 function OurWork() {
   return (
-    <StyledWork>
+    <StyledWork
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{background: "#fff"}}
+    >
       <Movie>
         <h2>The Great Hunger</h2>
         <div className="line"></div>
@@ -30,12 +39,13 @@ function OurWork() {
   );
 }
 
-const StyledWork = styled.div`
+const StyledWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0;
+    color: black;
   }
 `;
 

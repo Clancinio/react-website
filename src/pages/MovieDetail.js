@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { MovieState } from "../movieState";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 
 function MovieDetail() {
   const history = useHistory();
@@ -20,7 +23,12 @@ function MovieDetail() {
   return (
     <>
       {movie && (
-        <StyledDetails>
+        <StyledDetails
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <Headline>
             <h2>{movie.title}</h2>
             <img src="https://picsum.photos/400/300" alt="movie image" />
@@ -35,7 +43,7 @@ function MovieDetail() {
             ))}
           </Awards>
           <ImageDisplay>
-            <img src="https://picsum.photos/400/300" alt="movie screenshot"/>
+            <img src="https://picsum.photos/400/300" alt="movie screenshot" />
           </ImageDisplay>
         </StyledDetails>
       )}
@@ -43,7 +51,7 @@ function MovieDetail() {
   );
 }
 
-const StyledDetails = styled.div``;
+const StyledDetails = styled(motion.div)``;
 
 const Headline = styled.div`
   min-height: 90vh;
