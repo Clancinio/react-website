@@ -3,6 +3,8 @@ import Toggle from "./Toggle";
 // Styling
 import styled from "styled-components";
 import { StyledAbout } from "../styles/ComponentStyles";
+import { motion, AnimateSharedLayout } from "framer-motion";
+import { fade } from "../animations";
 
 function QuestionsSection() {
   return (
@@ -10,69 +12,44 @@ function QuestionsSection() {
       <h2>
         Some frequently asked <span>questions</span>
       </h2>
-      <Toggle>
-        <div className="question">
-          <h4>How do I start?</h4>
+      <AnimateSharedLayout>
+        <Toggle title="How do I start?">
           <div className="answer">
-            <p>
+          <motion.p variants={fade} initial="hidden" animate="show">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusamus, eaque?
-            </p>
-            <p>
+            </motion.p>
+            <motion.p variants={fade} initial="hidden" animate="show">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
               accusamus officia fuga asperiores, voluptate repellat.
-            </p>
+            </motion.p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <div className="question">
-        <h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi?
-        </h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            eaque?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
-            accusamus officia fuga asperiores, voluptate repellat.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            eaque?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
-            accusamus officia fuga asperiores, voluptate repellat.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-        <div className="question">
-          <h4>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, consequuntur. Sapiente.
-          </h4>
+        </Toggle>
+        <Toggle title="Another question?">
           <div className="answer">
-            <p>
+          <motion.p variants={fade} initial="hidden" animate="show">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusamus, eaque?
-            </p>
-            <p>
+            </motion.p>
+            <motion.p variants={fade} initial="hidden" animate="show">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
               accusamus officia fuga asperiores, voluptate repellat.
-            </p>
+            </motion.p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </div>
+        </Toggle>
+        <Toggle title="Another question?">
+          <div className="answer">
+            <motion.p variants={fade} initial="hidden" animate="show">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, eaque?
+            </motion.p>
+            <motion.p variants={fade} initial="hidden" animate="show">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              accusamus officia fuga asperiores, voluptate repellat.
+            </motion.p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </StyledQuestions>
   );
 }
