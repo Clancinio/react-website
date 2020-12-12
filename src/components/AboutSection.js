@@ -7,6 +7,9 @@ import {
 } from "../styles/ComponentStyles";
 // Framer Motion
 import { motion } from "framer-motion";
+import { fade, photoAnim } from "../animations";
+import Wave from "./Wave";
+// import { titleAnim} from "../animations";
 
 function AboutSection() {
   return (
@@ -22,12 +25,13 @@ function AboutSection() {
             </motion.h2>
           </Hide>
         </motion.div>
-        <p>Call us if you want to get after it.</p>
-        <button>Contact Us</button>
+        <motion.p variants={fade}>Call us if you want to get after it.</motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </StyledDescription>
       <StyledImage>
         <img src="https://picsum.photos/300/400" alt="logo" />
       </StyledImage>
+      <Wave /> 
     </StyledAbout>
   );
 }
